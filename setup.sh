@@ -8,9 +8,13 @@ fi
 cd ~/dotfiles/
 
 # add more files to the list here as needed
-for i in zshrc ; do
-    ln -sf `pwd`/$i ~/.$i
+#
+# TODO: maybe add an option to this script to control which files to
+# symlink/load from emacs.d/config/
+for i in emacs.d tmux.conf zshenv zshrc ; do
+    ln -sfn `pwd`/$i ~/.$i
 done
 
 # change shell to zsh
+# TODO: maybe check the current shell first and only change if != zsh?
 chsh -s $(grep /zsh$ /etc/shells | tail -1)

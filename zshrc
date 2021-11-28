@@ -1,8 +1,8 @@
-# path
-export PATH="/usr/local/sbin:$PATH"
-
 # editor
 export EDITOR=emacs
+
+# aliases
+alias ls='ls -a --color'
 
 # git
 autoload -Uz compinit && compinit

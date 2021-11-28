@@ -1,0 +1,9 @@
+*
+!.gitignore
+!setup.sh
+!zshenv
+!zshrc
+!emacs.d
+!emacs.d/init.el
+!emacs.d/config
+!emacs.d/config/*
